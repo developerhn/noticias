@@ -1,0 +1,12 @@
+{
+  "name": "hackernews-com-ar",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check src/index.js && node test/smoke.mjs",
+    "dev": "wrangler dev",
+    "migrate:remote": "wrangler d1 migrations apply hn-argentina --remote",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": { "wrangler": "4.45.0" }
+}
